@@ -30,14 +30,18 @@ body {
 }
 
 .nav li {
-    margin: 0 15px;
+    margin: 0 4px;
+    padding: 0;
 }
 
 .nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 10px 15px;
+    display: block;
 }
+
 
 .main-content {
     margin-top: 70px;
