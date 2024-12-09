@@ -98,8 +98,8 @@ p{
     font-size: large;
     color: white;
 }
-.socials img {
-    width: 25px;
-    margin: 0 10px;
+section.socials {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
