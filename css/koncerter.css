@@ -1,0 +1,116 @@
+/* Generel styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+    text-align: center;
+}
+
+.logo img {
+    display: flex;
+    width: 100px;
+    margin: right 20px
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    display: flex;
+    justify-content:space-evenly ;
+    margin: 0 4px;
+    padding: 0;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Kalender-sektionen */
+.kalender {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.kalender h2 {
+    font-size: 1.5rem;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.kalender img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Billeder-sektion */
+.images {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.images .image img {
+    width: 100%;
+    max-width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .social a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
