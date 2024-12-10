@@ -99,7 +99,30 @@ img {
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+.bestil-knap {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px; /* For at lave en oval form */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
 
+.bestil-knap:hover {
+    background-color: #333; /* Mørkere farve ved hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05); /* Lidt større ved hover */
+}
+
+.bestil-knap:active {
+    transform: scale(1); /* Tilbage til normal ved klik */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
 footer {
     color: white;
     text-align: center;
