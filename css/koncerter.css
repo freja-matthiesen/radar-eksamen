@@ -45,12 +45,12 @@ body {
 /* Kalender-sektionen */
 .kalender {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 20px;
-    padding: 40px;
+    grid-template-columns: repeat(2, 1fr); /* To kolonner */
+    grid-template-rows: repeat(2, auto); /* To rækker */
+    gap: 20px; /* Afstand mellem elementer */
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 section.images {
     display: grid;
