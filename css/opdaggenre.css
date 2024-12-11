@@ -58,27 +58,60 @@ body {
     padding: 10px 15px;
     display: block;
 }
+section.opdag-genre {
+    transform: translateY(100px);
+}
 
-.citat-sektion {
-    text-align: center; /* Centrerer billedet horisontalt */
-    margin: 20px 0; /* Tilføjer vertikal margin over og under sektionen */
+.opdag-genre {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #d9d9d9;
+}
+
+.left-column {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.left-column h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.left-column p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.left-column a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.right-column {
+    flex: 1;
+    text-align: center;
+}
+
+.portrait {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .citat-billede {
-    max-width: 50%; /* Sikrer, at billedet ikke overstiger forældreelementets bredde */
-    height: auto; /* Bevarer billedets proportioner */
-    padding: 10px; /* Tilføjer indvendig afstand omkring billedet */
-   
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
 
-}
-.right-section {
-    flex: 1; /* Giver højre sektion samme plads som venstre */
-    text-align: left; /* Venstrejuster tekst */
-}
-.left-section {
-    flex: 1; /* Giver venstre sektion samme plads som højre */
-    text-align: center; /* Centrerer indhold i venstre sektion */
-}
 
 
 
