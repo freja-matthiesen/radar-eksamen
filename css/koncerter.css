@@ -41,47 +41,47 @@ body {
     padding: 10px 15px;
     display: block;
 }
-
-/* Kalender-sektionen */
-.kalender {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* To kolonner */
-    grid-template-rows: repeat(2, auto); /* To rækker */
-    gap: 20px; /* Afstand mellem elementer */
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-section.images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 20px;
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-.kalender img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-
 img {
-    width: 100%;
-    max-width: 100%;
+    width: 300px;
     height: auto;
-    border-radius: 8px;
+}
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tre kolonner */
+    gap: 20px; /* Afstand mellem kolonner */
+    max-width: 1200px; /* Begræns layoutets bredde */
+    margin: 40px auto; /* Centrer layoutet */
+    padding: 20px;
 }
 
-.images.image img {
+/* Billeder */
+.item img {
     width: 100%;
-    max-width: 45%;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    height: auto;
+    border-radius: 10px; /* Runde hjørner */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Let skygge */
+}
+
+
+/* Knap styling */
+.bestil-knap {
+    background-color: black; /* Sort baggrund */
+    color: white; /* Hvid tekst */
+    font-size: 1.2rem; /* Størrelse på teksten */
+    font-weight: bold; /* Fed tekst */
+    padding: 15px 40px; /* Indvendig afstand */
+    border: none; /* Ingen kant */
+    border-radius: 50px; /* Gør knappen oval */
+    cursor: pointer; /* Gør musen til en klik-hånd */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Tilføjer skygge */
+    transition: all 0.3s ease; /* Glidende effekt ved hover */
+}
+
+/* Hover-effekt */
+.bestil-knap:hover {
+    background-color: #333; /* Mørkere baggrund ved hover */
+    transform: scale(1.05); /* Forstør knappen lidt */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Større skygge */
 }
 
 footer {
@@ -155,3 +155,10 @@ section.logo{
      height: auto;
      width: 50px;
     }
+/* Responsivt design */
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr; /* Skift til én kolonne på mindre skærme */
+        gap: 20px;
+    }
+}
