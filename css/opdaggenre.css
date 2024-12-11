@@ -11,7 +11,7 @@ body{
 /* styles.css */
 body {
     margin: 0;
-    color: black;
+    color: white;
     background-color: #d9d9d9;
 }
 
@@ -68,29 +68,37 @@ section.opdag-genre {
     align-items: flex-start;
     padding: 20px;
     background-color: #d9d9d9;
+    color: black;
+    line-height: 1.8;
 }
 
 .left-column {
     flex: 2;
     margin-right: 20px;
+    line-height: 1.8;
 }
 
 .left-column h1 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
+    line-height: 1.8;
 }
 
 .left-column p {
     margin-bottom: 15px;
     line-height: 1.6;
     font-size: 1rem;
+    color: black;
+    line-height: 1.8;
 }
 
 .left-column a {
     color: red;
     text-decoration: none;
     font-weight: bold;
+    line-height: 1.8;
+    
 }
 
 .right-column {
@@ -107,9 +115,9 @@ section.opdag-genre {
 }
 
 .citat-billede {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+    width: 500px;
+    max-width: 500px;
+    height: 200px;
 }
 
 
