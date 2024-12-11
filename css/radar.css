@@ -204,3 +204,58 @@ section.logo{
      width: 50px;
     }
  
+
+    /* Media Queries */
+@media (max-width: 1024px) {
+    /* Tablet-størrelse */
+    .support-container {
+        flex-direction: column; /* Læg sektioner oven på hinanden */
+        gap: 20px;
+    }
+
+    .left-section, .right-section {
+        text-align: center; /* Centrerer teksten på mindre skærme */
+    }
+
+    .right-section h2, .left-section h2 {
+        font-size: 1.3rem; /* Mindre overskrifter */
+    }
+
+    .right-section p, .left-section p {
+        font-size: 1rem; /* Juster tekststørrelse */
+    }
+
+    img.doner {
+        width: 80%; /* Reducer billedstørrelse på tablets */
+        margin: 0 auto; /* Centrer billedet */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobil-størrelse */
+    .support-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-section h2, .right-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .left-section img, .right-section img {
+        width: 100%; /* Tilpas billeder til skærmen */
+        margin: 0 auto;
+    }
+
+    .right-section p {
+        font-size: 0.9rem; /* Reducer tekststørrelse */
+    }
+
+    .socials img {
+        width: 20px; /* Mindre ikoner til mobil */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Mindre tekst i footer */
+    }
+}
