@@ -17,6 +17,9 @@ body {
     width: 100px;
     margin: right 20px
 }
+ul {
+    transform: translateY(-110%);
+}
 
 .nav ul {
     list-style: none;
@@ -41,6 +44,15 @@ body {
     padding: 10px 15px;
     display: block;
 }
+
+.item img {
+    width: 100%; /* Sørg for, at billedet fylder sin container */
+    height: 300px; /* Tving billedet til samme højde */
+    object-fit: cover; /* Bevarer proportioner og beskærer billedet */
+    border-radius: 10px; /* Runde hjørner */
+    
+}
+
 img {
     width: 300px;
     height: auto;
@@ -59,7 +71,7 @@ img {
     width: 100%;
     height: auto;
     border-radius: 10px; /* Runde hjørner */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Let skygge */
+    
 }
 
 
@@ -82,6 +94,11 @@ img {
     background-color: #333; /* Mørkere baggrund ved hover */
     transform: scale(1.05); /* Forstør knappen lidt */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Større skygge */
+}
+
+.cta {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 footer {
