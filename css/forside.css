@@ -14,6 +14,61 @@ body{
     width: 100%;
     position: relative;
 }
+.event-details {
+    transform: translateY(-550%);
+    text-align: center;
+}
+hr.divider {
+    position: relative;
+    left: -80px;
+}
+
+.event-details .divider {
+    width: 30%;
+    height: 2px;
+    background: white;
+    margin: 0 auto;
+    border: none;
+}
+
+/* Søgefunktion */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px 0 0 5px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.search-bar input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-left: none;
+    background: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+    background: gray;
+}
 
 /* styles.css */
 body {
@@ -23,16 +78,11 @@ body {
 }
 
 .header {
-    position: fixed;
-    top: 10px;
     display: flex;
-    justify-content:left;
-    padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    height: auto;
-    z-index: 10;
-    align-items:center;
+    justify-content: space-between; /* Sørger for, at elementerne fordeles korrekt */
+    align-items: center; /* Vertikalt centrerer elementerne */
+    padding: 10px 30px; /* Juster afstand rundt om headeren */
+    background: black;
 }
 
 .logo img {
@@ -42,28 +92,88 @@ body {
 }
 
 
-.nav ul {
-    list-style: none;
+/* Navigation */
+/* Navbar Container */
+
+nav.nav {
+    transform: translateY(80%);
+}
+
+.nav {
     display: flex;
+    justify-content: space-evenly; /* Lige stor afstand mellem punkterne */
+    align-items: center; /* Vertikal centrering */
     margin: 0;
     padding: 0;
 }
 
-.nav ul li {
-    display: flex;
-    justify-content:space-evenly ;
-    margin: 0 4px;
+/* Listeelementer */
+.nav ul {
+    list-style: none; /* Fjern punkttegn */
+    display: flex; /* Gør listen til en række */
+    gap: 4rem; /* Ensartet afstand mellem punkterne */
+    margin: 0;
     padding: 0;
-    margin-left: 5rem;
-    margin-top: 2rem;
 }
 
+/* Listepunkter */
+.nav ul li {
+    margin: 0; /* Ingen ekstra margener */
+    padding: 0;
+}
+
+/* Links */
 .nav a {
-    text-decoration: none;
+    text-decoration: none; /* Fjern understregning */
+    color: white; /* Hvid tekstfarve */
+    font-weight: bold; /* Gør teksten fed */
+    font-size: 16px; /* Tekststørrelse */
+    padding: 10px 15px; /* Klikbart område */
+    display: block; /* Sørger for klikbar blok */
+    transition: color 0.3s ease; /* Blød overgang ved hover */
+}
+
+/* Hover Effekt */
+.nav a:hover {
+    color: gray; /* Skift til grå ved hover */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Afstand mellem input og knap */
+}
+
+.search-bar input {
+    width: 200px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px 0 0 5px;
+    background: transparent;
     color: white;
-    font-weight: bold;
-    padding: 10px 15px;
-    display: block;
+    font-size: 14px;
+}
+
+.search-bar input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-left: none;
+    background: white;
+    color: black;
+    font-size: 14px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+    background: gray;
 }
 
 

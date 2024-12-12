@@ -58,6 +58,9 @@ body {
     padding: 10px 15px;
     display: block;
 }
+.nav a:hover {
+    color: gray; /* Skift til grå ved hover */
+}
 
 /* Container Layout */
 .support-container {
