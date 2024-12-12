@@ -26,14 +26,14 @@ body {
     position: fixed;
     top: 10px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content:left
     padding: 10px 20px;
     background: rgba(0, 0, 0, 0.8);
     position: fixed;
     width: 100%;
     height: auto;
     z-index: 10;
+    align-items:center;
 }
 
 .logo img {
@@ -66,6 +66,14 @@ body {
     display: block;
 }
 
+
+/* Menu icon */
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
 
 .main-content {
     margin-top: 70px;
@@ -166,6 +174,4 @@ section.logo{
      height: auto;
      width: 50px;
     }
-
-
 
