@@ -24,7 +24,7 @@ body {
 .logo img {
     display: flex;
     width: 100px;
-    margin: right 20px
+    margin: right 20px;
 }
 ul {
     transform: translateY(-110%);
@@ -77,10 +77,10 @@ img {
 
 /* Billeder */
 .item img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 300px;
+    object-fit: cover; /* For at undgå forvrængning */
     border-radius: 10px; /* Runde hjørner */
-    
 }
 
 
