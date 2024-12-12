@@ -14,21 +14,29 @@ body{
     width: 100%;
     position: relative;
 }
+
 .event-details {
-    transform: translateY(-550%);
-    text-align: center;
+    transform: translateY(-420px);
 }
-hr.divider {
-    position: relative;
-    left: -80px;
+
+.event-details {
+    text-align: center; /* Centrér teksten og divideren */
+    margin: 0 auto; /* Sikrer, at det holder sig på midten */
+}
+
+.event-details h1 {
+    font-size: 48px; /* Størrelsen af overskriften */
+    font-weight: bold; /* Gør teksten fed */
+    margin-bottom: 10px; /* Mellemrum mellem tekst og divider */
+    line-height: 1.2; /* Reducer lodret afstand indenfor teksten */
 }
 
 .event-details .divider {
-    width: 30%;
-    height: 2px;
-    background: white;
-    margin: 0 auto;
-    border: none;
+    width: 50%; /* Dividerens bredde */
+    height: 2px; /* Dividerens højde */
+    background: white; /* Dividerens farve */
+    margin: 0 auto; /* Sørg for, at den er centreret */
+    border: none; /* Fjern eventuelle kanter */
 }
 
 /* Søgefunktion */

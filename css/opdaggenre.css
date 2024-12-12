@@ -34,6 +34,11 @@ body {
     width: 100px;
     margin: right 20px
 }
+.logo a {
+    pointer-events: auto; /* Tillad klik */
+    text-decoration: none; /* Fjern understregning */
+    display: inline-block; /* Sørg for klikbart område følger billedet */
+}
 
 .nav ul {
     list-style: none;

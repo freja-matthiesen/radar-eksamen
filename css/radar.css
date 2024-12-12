@@ -28,7 +28,11 @@ body {
     height: auto;
     z-index: 10;
 }
-
+.logo a {
+    pointer-events: auto; /* Tillad klik */
+    text-decoration: none; /* Fjern understregning */
+    display: inline-block; /* Sørg for klikbart område følger billedet */
+}
 .logo img {
     display: flex;
     width: 100px;

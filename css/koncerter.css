@@ -7,6 +7,7 @@ body{
       "XROT" 
       "YROT" 
   }
+ 
 
 /* Generel styling */
 * {
@@ -21,13 +22,29 @@ body {
     text-align: center;
 }
 
+.header {
+    position: fixed;
+    top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    background: #d9d9d9;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
 .logo img {
     display: flex;
     width: 100px;
-    margin: right 20px;
+    margin: right 20px
 }
-ul {
-    transform: translateY(-110%);
+.logo a {
+    pointer-events: auto; /* Tillad klik */
+    text-decoration: none; /* Fjern understregning */
+    display: inline-block; /* Sørg for klikbart område følger billedet */
 }
 
 .nav ul {
@@ -58,7 +75,11 @@ ul {
 }
 
 .item {
-    transform: translateY(-100px);
+    transform: translateY(90px);
+}
+
+img.rykke-ned {
+    transform: translateY(50px);
 }
 
 .item img {
@@ -86,13 +107,13 @@ img {
 /* Billeder */
 .item img {
     width: auto;
-    height: 300px;
+    height: 350px;
     object-fit: cover; /* For at undgå forvrængning */
     border-radius: 10px; /* Runde hjørner */
 }
 
 button.bestil-knap {
-    transform: translateY(-90px);
+    transform: translateY(40px);
     position: absolute;
     right: 40px;
 }
@@ -121,6 +142,10 @@ button.bestil-knap {
 .cta {
     display: flex;
     flex-direction: row-reverse;
+}
+
+footer.footer {
+    transform: translateY(170px);
 }
 
 footer {
@@ -197,6 +222,7 @@ section.logo{
      height: auto;
      width: 50px;
     }
+    
 /* Responsivt design */
 @media (max-width: 768px) {
     .layout {
