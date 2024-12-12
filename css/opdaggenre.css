@@ -126,7 +126,9 @@ section.opdag-genre {
 
 
 
-
+a:visited {
+    color: white;  /* Undgå lilla farve */
+}
 footer {
     color: white;
     text-align: center;

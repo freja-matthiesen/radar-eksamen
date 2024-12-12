@@ -156,6 +156,9 @@ footer {
 }
 
 /* Adresse styling */
+a:visited {
+    color: white;  /* Undgå lilla farve */
+}
 .footer-address {
     color: white;
     text-decoration: none;

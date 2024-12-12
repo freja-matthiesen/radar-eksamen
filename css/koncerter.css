@@ -54,6 +54,10 @@ ul {
     display: block;
 }
 
+.item {
+    transform: translateY(-100px);
+}
+
 .item img {
     width: 100%; /* Sørg for, at billedet fylder sin container */
     height: 300px; /* Tving billedet til samme højde */
@@ -65,11 +69,12 @@ ul {
 img {
     width: 300px;
     height: auto;
+    border-radius: 15px;
 }
 .layout {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* Tre kolonner */
-    gap: 20px; /* Afstand mellem kolonner */
+    gap: 50px; /* Afstand mellem kolonner */
     max-width: 1200px; /* Begræns layoutets bredde */
     margin: 40px auto; /* Centrer layoutet */
     padding: 20px;
@@ -83,6 +88,11 @@ img {
     border-radius: 10px; /* Runde hjørner */
 }
 
+button.bestil-knap {
+    transform: translateY(-90px);
+    position: absolute;
+    right: 40px;
+}
 
 /* Knap styling */
 .bestil-knap {
@@ -131,6 +141,9 @@ footer {
 .logo img {
     width: 120px;   /* Juster logo-størrelse */
     margin-bottom: -10px;
+}
+a:visited {
+    color: white;  /* Undgå lilla farve */
 }
 
 /* Adresse styling */
