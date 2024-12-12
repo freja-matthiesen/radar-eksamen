@@ -13,6 +13,7 @@ body{
     height: 100vh;
     width: 100%;
     position: relative;
+    z-index: -1;
 }
 
 .event-details {
@@ -146,6 +147,10 @@ nav.nav {
     color: gray; /* Skift til grå ved hover */
 }
 
+
+
+
+
 /* Search Bar */
 .search-bar {
     display: flex;
@@ -185,14 +190,6 @@ nav.nav {
 }
 
 
-
-/* Menu icon */
-.menu-icon {
-    display: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-}
 
 .main-content {
     margin-top: 70px;
@@ -296,4 +293,7 @@ section.logo{
      height: auto;
      width: 50px;
     }
+
+
+
 
