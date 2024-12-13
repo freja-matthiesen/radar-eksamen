@@ -308,17 +308,29 @@ section.logo{
 
 
 
-    .left-column, .right-column {
-        width: 100%;
-        text-align: center;
+    .opdag-genre {
+        display: flex;
+        flex-direction: column; /* Stabel sektionerne i stedet for side om side */
+        padding: 20px;
+        background: #d9d9d9;
     }
 
-    .left-column h1 {
-        font-size: 1.6rem;
+    .left-column, .right-column {
+        width: 100%; /* Gør begge sektioner 100% bredde */
+        text-align: center;
+        margin-bottom: 20px; /* Giv afstand mellem sektionerne */
+    }
+
+    .right-column {
+        order: 2; /* Flyt højre kolonne under venstre kolonne */
+    }
+
+    .left-column {
+        order: 1; /* Bevar venstre kolonne som første sektion */
     }
 
     .portrait, .citat-billede {
-        width: 90%;
+        width: 90%; /* Gør billederne responsivt */
         height: auto;
         margin: 0 auto;
     }
