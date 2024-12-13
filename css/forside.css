@@ -648,12 +648,6 @@ section.logo{
     }
 }
 
-
-
-
-
-
-
         /* Responsive Styles */
     @media (max-width: 768px) {
         .burger {
@@ -663,7 +657,7 @@ section.logo{
         .nav ul {
             display: none;
             flex-direction: column;
-            background: black;
+            background: white;
             position: absolute;
             top: 70px;
             right: 10px;
