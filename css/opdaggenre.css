@@ -232,7 +232,7 @@ section.logo{
      width: 50px;
     }
 
-/* Responsiv tilpasning */
+/* Responsiv */
 @media (max-width: 1024px) {
     /* Mindre navbar til iPads og mindre skærme */
     .header {
