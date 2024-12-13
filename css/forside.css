@@ -168,10 +168,7 @@ nav.nav {
         height: 3px;
         background: white;
     }
-    /* Show Menu When Checked */
-    .menu-toggle:checked + .burger + .nav ul {
-        display: flex;
-    }
+
 
 /* Search Bar */
 .search-bar {
@@ -489,6 +486,7 @@ section.logo{
     }
     
     
+    
     /* Search Bar */
     .search-bar {
         display: flex;
@@ -685,7 +683,7 @@ section.logo{
             text-align: left;
             padding: 10px;
             border: 1px solid black;
-            z-index: 102;
+            z-index: 98;
         }
     
         .menu-toggle:checked + .burger + .nav ul {
