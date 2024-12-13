@@ -15,6 +15,13 @@ body{
     position: relative;
     z-index: -1;
 }
+.header {
+    display: flex; /* Aktiver Flexbox */
+    justify-content: space-between; /* Fordel pladsen jævnt mellem elementerne */
+    align-items: center; /* Centrer elementerne vertikalt */
+    padding: 10px 30px;
+    background: black;
+}
 
 .event-details {
     transform: translateY(-420px);
@@ -40,22 +47,23 @@ body{
     border: none; /* Fjern eventuelle kanter */
 }
 
-/* Søgefunktion */
+
+/* Search Bar Styling */
 .search-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    flex: 0 0 auto; /* Fast bredde */
+    display: flex; /* Vandret layout */
+    align-items: center; /* Centrer søgefeltet vertikalt */
+    gap: 5px; /* Afstand mellem input og knap */
 }
 
 .search-bar input {
-    width: 300px;
-    padding: 10px;
-    border: 2px solid white;
+    width: 200px; /* Juster bredden af søgefeltet */
+    padding: 5px 10px;
+    border: 1px solid white;
     border-radius: 5px 0 0 5px;
     background: transparent;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .search-bar input::placeholder {
@@ -64,14 +72,14 @@ body{
 }
 
 .search-bar button {
-    padding: 10px 15px;
-    border: 2px solid white;
+    padding: 5px 10px;
+    border: 1px solid white;
     border-left: none;
     background: white;
     color: black;
-    font-size: 16px;
-    cursor: pointer;
+    font-size: 14px;
     border-radius: 0 5px 5px 0;
+    cursor: pointer;
     transition: background 0.3s ease;
 }
 
