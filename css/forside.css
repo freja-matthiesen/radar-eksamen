@@ -121,48 +121,35 @@ body {
     height: 3px;
     background: white;
 }
-/* Navigation */
-/* Navbar Container */
 
-nav.nav {
-    transform: translateY(80%);
+
+ul {
+    transform: translateY(50%);
 }
 
-.nav {
-    display: flex;
-    justify-content: space-evenly; /* Lige stor afstand mellem punkterne */
-    align-items: center; /* Vertikal centrering */
-    margin: 0;
-    padding: 0;
-}
-
-/* Listeelementer */
 .nav ul {
-    list-style: none; /* Fjern punkttegn */
-    display: flex; /* Gør listen til en række */
-    gap: 4rem; /* Ensartet afstand mellem punkterne */
+    list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
 }
 
-/* Listepunkter */
 .nav ul li {
-    margin: 0; /* Ingen ekstra margener */
+    display: flex;
+    justify-content:space-evenly ;
+    margin: 0 4px;
     padding: 0;
+    margin-left: 5rem;
+    margin-top: 2rem;
 }
 
-/* Links */
 .nav a {
-    text-decoration: none; /* Fjern understregning */
-    color: white; /* Hvid tekstfarve */
-    font-weight: bold; /* Gør teksten fed */
-    font-size: 16px; /* Tekststørrelse */
-    padding: 10px 15px; /* Klikbart område */
-    display: block; /* Sørger for klikbar blok */
-    transition: color 0.3s ease; /* Blød overgang ved hover */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
 }
-
-/* Hover Effekt */
 .nav a:hover {
     color: gray; /* Skift til grå ved hover */
 }
