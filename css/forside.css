@@ -147,29 +147,31 @@ nav.nav {
     color: gray; /* Skift til grå ved hover */
 }
 
-   /* Burger Menu Styles */
-   .menu-toggle {
-    display: none;
-}
-
-.burger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    position: absolute;
-    right: 30px;
-    top: 20px;
-    z-index: 20;
-}
-
-.burger span {
-    width: 25px;
-    height: 3px;
-    background: white;
-}
-
-
+    /* Burger Menu Styles */
+    .menu-toggle {
+        display: none;
+    }
+    
+    .burger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        z-index: 20;
+    }
+    
+    .burger span {
+        width: 25px;
+        height: 3px;
+        background: white;
+    }
+    /* Show Menu When Checked */
+    .menu-toggle:checked + .burger + .nav ul {
+        display: flex;
+    }
 
 /* Search Bar */
 .search-bar {
@@ -439,6 +441,7 @@ section.logo{
         gap: 4rem; /* Ensartet afstand mellem punkterne */
         margin: 0;
         padding: 0;
+        z-index: 102;
     }
     
     /* Listepunkter */
@@ -476,7 +479,7 @@ section.logo{
         position: absolute;
         right: 30px;
         top: 20px;
-        z-index: 20;
+        z-index: 101;
     }
     
     .burger span {
@@ -484,7 +487,6 @@ section.logo{
         height: 3px;
         background: white;
     }
-    
     
     
     /* Search Bar */
@@ -650,8 +652,14 @@ section.logo{
 
         /* Responsive Styles */
     @media (max-width: 768px) {
+        .layout {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+    
         .burger {
             display: flex;
+            z-index: 100;
         }
     
         .menu-toggle {
@@ -662,7 +670,7 @@ section.logo{
             width: 50px;
             height: 50px;
             opacity: 0;
-            z-index: 30;
+            z-index: 101;
             cursor: pointer;
         }
     
@@ -677,7 +685,7 @@ section.logo{
             text-align: left;
             padding: 10px;
             border: 1px solid black;
-            z-index: 30;
+            z-index: 102;
         }
     
         .menu-toggle:checked + .burger + .nav ul {
@@ -692,7 +700,7 @@ section.logo{
             color: black;
             width: 100%;
             display: block;
-            z-index: 50;
+    
         }
     
         .header {
