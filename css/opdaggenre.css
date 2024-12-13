@@ -223,7 +223,7 @@ p{
 section.socials {
     display: flex;
     flex-direction: row-reverse;
-    transform: translateY(-120px);
+    transform: translateY(-90px);
     gap: 10px;
 }
 section.logo{
