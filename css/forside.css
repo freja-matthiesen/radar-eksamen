@@ -15,101 +15,102 @@ body{
     z-index: -1;
 }
 .header {
-    display: flex; /* Aktiver Flexbox */
-    justify-content: space-between; /* Fordel pladsen jævnt mellem elementerne */
-    align-items: center; /* Centrer elementerne vertikalt */
+    display: flex; 
+    justify-content: space-between; /* Fordeler pladsen jævnt mellem elementerne */
+    align-items: center; 
     padding: 10px 30px;
     background: black;
 }
-
+/* flytter event details 420 px op */
 .event-details {
     transform: translateY(-420px);
 }
 
 .event-details {
     text-align: center; /* Centrér teksten og divideren */
-    margin: 0 auto; /* Sikrer, at det holder sig på midten */
+    margin: 0 auto; 
 }
-
+/* Her ses styling af overskirften */
 .event-details h1 {
     font-size: 48px; /* Størrelsen af overskriften */
     font-weight: bold; /* Gør teksten fed */
     margin-bottom: 10px; /* Mellemrum mellem tekst og divider */
-    line-height: 1.2; /* Reducer lodret afstand indenfor teksten */
+    line-height: 1.2; 
 }
 
+/* Her ses divider der ses under teksten */
 .event-details .divider {
     width: 50%; /* Dividerens bredde */
-    height: 2px; /* Dividerens højde */
-    background: white; /* Dividerens farve */
-    margin: 0 auto; /* Sørg for, at den er centreret */
-    border: none; /* Fjern eventuelle kanter */
+    height: 2px; 
+    background: white; 
+    margin: 0 auto; 
+    border: none; 
 }
 
 
-/* Search Bar Styling */
+/* Her er styling af Search Bar  */
 .search-bar {
-    flex: 0 0 auto; /* Fast bredde */
-    display: flex; /* Vandret layout */
+    flex: 0 0 auto; 
+    display: flex; 
     align-items: center; /* Centrer søgefeltet vertikalt */
-    gap: 5px; /* Afstand mellem input og knap */
+    gap: 5px; 
 }
-
+/* Her er styling af tekstfeltet  */
 .search-bar input {
-    width: 200px; /* Juster bredden af søgefeltet */
-    padding: 5px 10px;
-    border: 1px solid white;
+    width: 200px; 
+    padding: 5px 10px; /* indenvendig mellemrum  */
+    border: 1px solid white; /* hvid kant omkring feltet  */
     border-radius: 5px 0 0 5px;
-    background: transparent;
-    color: white;
-    font-size: 14px;
+    background: transparent; /* gør baggrunden gennemsigtig */
+    color: white; /* Hvid tekstfarve  */
+    font-size: 14px; /* tekststørelsen  */
 }
-
+/* her ses styling af pladsholder tekst i inputfeltet */
 .search-bar input::placeholder {
-    color: white;
-    opacity: 0.8;
+    color: white; /* gør teksten hvid */
+    opacity: 0.8;  /* gør teksten gennemsigtig  */
 }
-
+/* Her er styling af søgeknappen i Search Bar-sektionen  */
 .search-bar button {
     padding: 5px 10px;
-    border: 1px solid white;
+    border: 1px solid white; /* Hvid kant omkring knappen   */
     border-left: none;
-    background: white;
-    color: black;
-    font-size: 14px;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    background: white; /* baggrundsfarve til hvid  */
+    color: black; /* tekstfarven til sort  */
+    font-size: 14px; /* teskststørrelsen */
+    border-radius: 0 5px 5px 0; /* afrunder sidens knap  */
+    cursor: pointer; /* ændre musen til hånd ved hoover  */
+    transition: background 0.3s ease; /* gør der er overgang i baggrundændringen  */
 }
 
 .search-bar button:hover {
-    background: gray;
+    background: gray;/* ændre baggrunden til grå  */
 }
 
-/* styles.css */
+/* genrel styling af siden  */
 body {
     margin: 0;
-    color: white;
+    color: white; /* standard tekstfarve til hvid  */
     background-color: black;
 }
-
+/* Styling af header sektionen  */
 .header {
     display: flex;
-    justify-content: space-between; /* Sørger for, at elementerne fordeles korrekt */
-    align-items: center; /* Vertikalt centrerer elementerne */
+    justify-content: space-between; 
+    align-items: center; /* Centrerer elementerne */
     padding: 10px 30px; /* Juster afstand rundt om headeren */
-    background: black;
+    background: black; /* ændre baggrunden til sort  */
 }
-
+/* Styling af logo i headeren  */
 .logo img {
     display: flex;
-    width: 100px;
-    margin-right: 20px;
+    width: 100px; /* logo bredde til 100px */
+    margin-right: 20px; /* mellemrum til højre for logoet  */
 }
 
-   /* Burger Menu Styles */
+   /* Styling af Burgermenu */
    .menu-toggle {
-    display: none;
+    display: none; /* Skjuler den  */
 }
 
 .burger {
@@ -122,25 +123,25 @@ body {
     top: 20px;
     z-index: 20;
 }
-
+/* Styling af linjerne i burgermenuen */
 .burger span {
     width: 25px;
     height: 3px;
     background: white;
 }
 
-
+/* Flytter ul listen 50% ned */
 ul {
     transform: translateY(50%);
 }
-
+/* Styling af nav listen ul */
 .nav ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
-
+/* Styling af nav listen li */
 .nav ul li {
     display: flex;
     justify-content:space-evenly ;
@@ -149,7 +150,7 @@ ul {
     margin-left: 5rem;
     margin-top: 2rem;
 }
-
+/* Styling af links i navigationen */
 .nav a {
     text-decoration: none;
     color: white;
@@ -158,35 +159,35 @@ ul {
     display: block;
 }
 .nav a:hover {
-    color: gray; /* Skift til grå ved hover */
+    color: gray; /* Skifter til grå ved hover */
 }
-
+/* Styling af hovedindholdet */
 .main-content {
     margin-top: 70px;
     position: relative;
     text-align: center;
 }
-
+/* Styling af overlay effekten */
 .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0; /* overlayen starter fra toppen */
+    left: 0; /* overlayen starter fra venstre */
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* baggrunden sort med en 50% gennemsigtighed */
 }
-
+/* Styling af det centrale indhold */
 .content {
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); /* justere indholdet opad */
 }
-
+/* Styling af paragrafen indenfor content */
 .content p {
     font-size: 18px;
     font-weight: bold;
 }
-
+/* Styling af footeren */
     footer {
     color: white;
     text-align: center;
@@ -194,11 +195,11 @@ ul {
     position: relative;
     padding: 20px 0;
     line-height: 1.3;
-    bottom: 0;
-    left: 0
+    bottom: 0; /* Placerer footeren i bunden  */
+    left: 0 /* Placerer footeren i venstre kant */
 }
 
-/* Hvid skillelinje */
+/* Hvid skillelinje over footeren */
 .footer-divider {
     width: 110%;    /* Mindre end fuld bredde for pæn margin */
     height: 2px;
@@ -211,28 +212,28 @@ ul {
     width: 120px;   /* Juster logo-størrelse */
     margin-bottom: -10px;
 }
-
+/* Styling for links der besøgt */
 a:visited {
-    color: white;  /* Undgå lilla farve */
+    color: white;  /* farven til hvid på besøgte links */
 }
-/* Adresse styling */
+/* Styling af adresse i footeren */
 .footer-address {
-    color: white;
+    color: white; /* tekstfarven til hvid */
     text-decoration: none;
-    font-size: 14px;   /* Mindre tekst */
+    font-size: 14px;   /* tekststørrelsen til 14px */
     display: block;
     margin-bottom: -10px;
     margin: 5px 0;
-    transform: translateY(-90px);
+    transform: translateY(-90px); /* flytter adressen 90% opad */
 }
 
-/* Socials styling */
+/* Styling af socials */
 .socials a img {
     width: 30px;  /* Mindre ikonstørrelse */
     margin: 0 5px;
     margin-bottom: -50px;
 }
-
+/* Styling af socials */
 .socials {
     margin-top: 10px;
     margin-bottom: -10px;
@@ -240,24 +241,23 @@ a:visited {
 
 /* Fjern standard link-styling */
 a {
-    text-decoration: none;
-    
-    transform: translateY(-25px);
+    text-decoration: none; /* fjerner understregning af links */
+    transform: translateY(-25px); /* flytter linket opad med 25px */
 }
-
-
+/* Styling af paragraf */
 p{
     font-weight: bold;
     font-size: large;
     color: white;
 }
-
+/* Styling af social medie sektionen */
 section.socials {
     display: flex;
     flex-direction: row-reverse;
     transform: translateY(-120px);
     gap: 10px;
 }
+/* Styling af logo */
 section.logo{
      display: block;
      height: auto;
@@ -266,33 +266,34 @@ section.logo{
 
 
     
- /* Responsive Styles */
+ /* Responsive Styles for ipad */
 @media (max-width: 1024px) {
     .nav ul {
         gap: 1.5rem;
         justify-content: space-between;
     }
     .search-bar {
-        display: none;
+        display: none; /* Skjuler søgebaren på skærme under 1024px */
     }
 }
 
+/* Responsive Styles for skærme mindre end 900px bredde */
 @media (max-width: 900px) {
     .nav ul {
-        gap: 1rem;
+        gap: 1rem; /* Mindsker afstanden mellem nav punkterne */
         justify-content: space-around;
     }
 }
 
-        /* Responsive Styles */
+        /* Responsive Styles for iphone */
     @media (max-width: 768px) {
         .layout {
-            grid-template-columns: 1fr;
-            gap: 10px;
+            grid-template-columns: 1fr; /* ændre grid layoutet til en kolonne */
+            gap: 10px; /* mellemrum mellem dem */
         }
     
         .burger {
-            display: flex;
+            display: flex; /* gør burgermenuen synlig */
         }
     
         .menu-toggle {
@@ -300,15 +301,15 @@ section.logo{
             position: absolute;
             top: 0;
             right: 0;
-            width: 50px;
+            width: 50px; /* breden og højden på menu toggle */
             height: 50px;
             opacity: 0;
-            z-index: 30;
+            z-index: 30; /* gør knappen ligger øverst */
             cursor: pointer;
         }
     
         .nav ul {
-            display: none;
+            display: none; /* skjuler nav menuen */
             flex-direction: column;
             background: white;
             position: absolute;
@@ -321,18 +322,19 @@ section.logo{
             z-index: 30;
         }
     
+        /* Vis nav menuen, når menu-toggle er aktiveret */
         .menu-toggle:checked + .burger + .nav ul {
-            display: flex;
+            display: flex; 
         }
     
         .nav ul li {
-            margin: 10px 0;
+            margin: 10px 0; /* mellemtum mellem listepunkt */
         }
     
         .nav a {
-            color: black;
+            color: black; /* tekstfarven sor */
             width: 100%;
             display: block;
-            z-index: 50;
+            z-index: 50; /* sikrer, at links er øverst i menuen */
         }
     }
