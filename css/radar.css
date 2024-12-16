@@ -259,6 +259,7 @@ section.logo{
     .nav a {
         font-size: 16px;
     }
+    
     /* arrangere elementerne i kollone istedet for horisontalt */
     .support-container {
         flex-direction: column;

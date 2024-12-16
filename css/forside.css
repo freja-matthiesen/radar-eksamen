@@ -209,15 +209,10 @@ ul {
     background: white;
     margin: 0 auto 10px;  /* Centrer og tilføj afstand til indhold */
 }
-
 /* Logo sektion */
 .logo img {
     width: 120px;   /* Juster logo-størrelse */
     margin-bottom: -10px;
-}
-/* Styling for links der besøgt */
-a:visited {
-    color: white;  /* farven til hvid på besøgte links */
 }
 /* Styling af adresse i footeren */
 .footer-address {
@@ -229,7 +224,6 @@ a:visited {
     margin: 5px 0;
     transform: translateY(-90px); /* flytter adressen 90% opad */
 }
-
 /* Styling af socials */
 .socials a img {
     width: 30px;  /* Mindre ikonstørrelse */
@@ -241,7 +235,19 @@ a:visited {
     margin-top: 10px;
     margin-bottom: -10px;
 }
+/* Styling for links der besøgt */
+a:visited {
+    color: white;  /* farven til hvid på besøgte links */
+}
 
+/* Styling for links der besøgt */
+a:visited {
+    color: white;  /* farven til hvid på besøgte links */
+}
+/* Styling for links der besøgt */
+a:visited {
+    color: white;  /* farven til hvid på besøgte links */
+}
 /* Fjern standard link-styling */
 a {
     text-decoration: none; /* fjerner understregning af links */
@@ -271,6 +277,14 @@ section.logo{
     
  /* Responsive Styles for ipad */
 @media (max-width: 1024px) {
+    .footer-divider {
+        width: 100%; /* Reducerer skillelinjen */
+    }
+
+    .logo img {
+        width: 100px; /* Gør logoet mindre */
+    }
+
     .nav ul {
         gap: 1.5rem;
         justify-content: space-between;
@@ -339,5 +353,16 @@ section.logo{
             width: 100%;
             display: block;
             z-index: 50; /* sikrer, at links er øverst i menuen */
+        }
+        .logo img {
+            width: 80px; /* Mindre logo */
+        }
+    
+        .socials a img {
+            width: 25px; /* Reducerer ikonstørrelsen */
+        }
+    
+        .footer-address {
+            font-size: 12px; /* Mindre tekst for bedre pasform */
         }
     }
