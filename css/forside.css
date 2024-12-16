@@ -284,7 +284,7 @@ section.logo{
     .logo img {
         width: 100px; /* Gør logoet mindre */
     }
-
+    
     .nav ul {
         gap: 1.5rem;
         justify-content: space-between;
@@ -353,16 +353,5 @@ section.logo{
             width: 100%;
             display: block;
             z-index: 50; /* sikrer, at links er øverst i menuen */
-        }
-        .logo img {
-            width: 80px; /* Mindre logo */
-        }
-    
-        .socials a img {
-            width: 25px; /* Reducerer ikonstørrelsen */
-        }
-    
-        .footer-address {
-            font-size: 12px; /* Mindre tekst for bedre pasform */
         }
     }
