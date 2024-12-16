@@ -1,3 +1,3 @@
 User-agent: *
 Disallow: /
-Sitemap: 
+Sitemap: https://radar-eksamen.freja-matthiesen.dk/sitemap.xml
