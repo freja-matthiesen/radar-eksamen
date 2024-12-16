@@ -1,5 +1,6 @@
+/* Styling af body element */
 body{
-    font-family: "Tilt Warp", sans-serif;
+    font-family: "Tilt Warp", sans-serif; /* skrifttypen til tilt wrap og sans serif som backup */
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
@@ -9,32 +10,32 @@ body{
  
 
 /* Generel styling */
-* {
+.body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Styling af body element */
 body {
     background-color: #d9d9d9;
     color: #000;
     text-align: center;
 }
-
+/* Styling af headeren */
 .header {
     position: fixed;
     top: 10px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start; /* gør elementerne er til venstre i headeren */
     align-items: center;
     padding: 10px 20px;
-    background: #d9d9d9;
+    background: #d9d9d9; /* genrel baggrundsfarve */
     position: fixed;
     width: 100%;
     height: auto;
-    z-index: 10;
+    z-index: 10; /* Giver headeren en z-index på 10, så den placeres ovenpå andre elementer med lavere z-index */
 }
-
+/* Styling af logo */
 .logo img {
     display: flex;
     width: 100px;
@@ -45,14 +46,14 @@ body {
     text-decoration: none; /* Fjern understregning */
     display: inline-block; /* Sørg for klikbart område følger billedet */
 }
-
+/* Styling af nav listen ul */
 .nav ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
-
+/* Styling af nav listen li */
 .nav ul li {
     display: flex;
     justify-content:space-evenly ;
@@ -61,7 +62,7 @@ body {
     margin-left: 5rem;
     margin-top: 2rem;
 }
-
+/* Styling af links i navigationen */
 .nav a {
     text-decoration: none;
     color: white;
@@ -70,35 +71,36 @@ body {
     display: block;
 }
 .nav a:hover {
-    color: gray; /* Skift til grå ved hover */
+    color: gray; /* Skifter til grå ved hover */
 }
 
 .item {
-    transform: translateY(90px);
+    transform: translateY(90px);  /* Flytter item 90px nedad */
 }
 
 img.rykke-ned {
     transform: translateY(50px);
 }
-
+ /* Styling af item img */
 .item img {
-    width: 100%; /* Sørg for, at billedet fylder sin container */
-    height: 300px; /* Tving billedet til samme højde */
-    object-fit: cover; /* Bevarer proportioner og beskærer billedet */
+    width: 100%; /* Billedet fylder sin container */
+    height: 300px; 
+    object-fit: cover; 
     border-radius: 10px; /* Runde hjørner */
     
 }
 
 img {
-    width: 300px;
+    width: 300px;  /* billedrt får fast brede på 300px */
     height: auto;
-    border-radius: 15px;
+    border-radius: 15px;  /* giver billedet runde hjørner med radius 15px */
 }
+
 .layout {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* Tre kolonner */
     gap: 50px; /* Afstand mellem kolonner */
-    max-width: 1200px; /* Begræns layoutets bredde */
+    max-width: 1200px; /* Begrænser layoutets bredde */
     margin: 40px auto; /* Centrer layoutet */
     padding: 20px;
 }
@@ -107,8 +109,8 @@ img {
 .item img {
     width: auto;
     height: 350px;
-    object-fit: cover; /* For at undgå forvrængning */
-    border-radius: 10px; /* Runde hjørner */
+    object-fit: cover; 
+    border-radius: 10px; /* Runde hjørner på 10px */
 }
 
 button.bestil-knap {
@@ -124,8 +126,8 @@ button.bestil-knap {
     font-size: 1.2rem; /* Størrelse på teksten */
     font-weight: bold; /* Fed tekst */
     padding: 15px 40px; /* Indvendig afstand */
-    border: none; /* Ingen kant */
-    border-radius: 50px; /* Gør knappen oval */
+    border: none; 
+    border-radius: 50px; 
     cursor: pointer; /* Gør musen til en klik-hånd */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Tilføjer skygge */
     transition: all 0.3s ease; /* Glidende effekt ved hover */
@@ -143,13 +145,13 @@ button.bestil-knap {
     flex-direction: row-reverse;
 }
 
-   /* Burger Menu Styles */
+   /* Styling af burgermenu  */
    .menu-toggle {
     display: none;
 }
 
 .burger {
-    display: none;
+    display: none; /* Skjuler den  */
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
@@ -158,18 +160,18 @@ button.bestil-knap {
     top: 20px;
     z-index: 20;
 }
-
+/* Styling af linjerne i burgermenuen */
 .burger span {
     width: 25px;
     height: 3px;
     background: white;
 }
 
-
+/* Flytter footer 170px nedad */
 footer.footer {
     transform: translateY(170px);
 }
-
+/* Styling af foooter */
 footer {
     color: white;
     text-align: center;
@@ -181,7 +183,7 @@ footer {
 
 /* Hvid skillelinje */
 .footer-divider {
-    width: 110%;    /* Mindre end fuld bredde for pæn margin */
+    width: 110%;    
     height: 2px;
     background: white;
     margin: 0 auto 10px;  /* Centrer og tilføj afstand til indhold */
@@ -192,112 +194,113 @@ footer {
     width: 120px;   /* Juster logo-størrelse */
     margin-bottom: -10px;
 }
+/* Styling for links der besøgt */
 a:visited {
-    color: white;  /* Undgå lilla farve */
+    color: white;  /* farven til hvid på besøgte links */
 }
 
-/* Adresse styling */
+/* Styling af adresse i footeren */
 .footer-address {
-    color: white;
+    color: white; /* tekstfarven til hvid */
     text-decoration: none;
-    font-size: 14px;   /* Mindre tekst */
+    font-size: 14px;  /* tekststørrelsen til 14px */
     display: block;
     margin-bottom: -10px;
     margin: 5px 0;
-    transform: translateY(-10px);
+    transform: translateY(-10px); /* flytter adressen 10% opad */
 }
 
-/* Socials styling */
+/* Styling af socials */
 .socials a img {
     width: 30px;  /* Mindre ikonstørrelse */
     margin: 0 5px;
     margin-bottom: -50px;
 }
-
+/* Styling af socials */
 .socials {
     margin-top: 10px;
     margin-bottom: -10px;
 }
 
-/* Fjern standard link-styling */
+
 a {
-    text-decoration: none;
-    
+    text-decoration: none;   /* Fjerner understregning af links */
     transform: translateY(-25px);
 }
 
 
 p{
-    font-weight: bold;
+    font-weight: bold; /* Gør teksten bold */
     font-size: large;
     color: white;
 }
-
+/* Styling af socials */
 section.socials {
     display: flex;
     flex-direction: row-reverse;
     transform: translateY(-60px);
-    gap: 10px;
+    gap: 10px; /* Tilføjer 10px mellemrum hvert element */
 }
+/* Styling af logo */
 section.logo{
      display: block;
      height: auto;
      width: 50px;
     }
     
-/* CTA Button */
+/* styling af bestil knap */
 .bestil-knap {
     background-color: black;
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 15px 40px;
-    border: none;
-    border-radius: 50px;
+    border: none; /* Fjerner standard ramme omkring knappen */
+    border-radius: 50px; /* gør hjørnerne runde */
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Tilføjer en let skygge under knappen */
+    transition: all 0.3s ease; /* laver glidende overgang når knappen ændre sig ved hoover */
 }
 
 .bestil-knap:hover {
-    background-color: gray;
+    background-color: gray; /* ændre baggrundfarven til grå når musen holdes over knappen*/
     transform: scale(1.05);
 }
 
 img {
     transform: translateY(25px);
 }
-/* Responsive Styles */
+/* Responsive Styles for ipad */
 @media (max-width: 1024px) {
     .layout {
-        grid-template-columns: 1fr;
-        gap: 15px;
+        grid-template-columns: 1fr; /* laver én kolonne i grid-layoutet  */
+        gap: 15px; 
     }
 
     .logo img {
-        width: 8vw;
+        width: 8vw; /* Sætter bredden af logoet til 8% af viewport-bredden */
     }
 
     .item {
-        display: flex;
-        flex-direction: column;
+        display: flex; /* Gør hvert item til en flex-container */
+        flex-direction: column; /* arragenre inholdet i en kolonne */
         align-items: center;
         text-align: center;
     }
 
     .item img {
-        margin-top: 20px;
+        margin-top: 20px; /* Tilføjer 20px afstand over billedet */
     }
 }
-
+/* Responsive Styles for iphone */
 @media (max-width: 768px) {
     .layout {
-        grid-template-columns: 1fr;
-        gap: 10px;
+        grid-template-columns: 1fr; /* ændre grid layoutet til en kolonne */
+        gap: 10px; /* mellemrum mellem dem */
     }
 
     .burger {
-        display: flex;
+        display: flex; /* gør burgermenuen synlig */
     }
 
     .menu-toggle {
@@ -305,15 +308,15 @@ img {
         position: absolute;
         top: 0;
         right: 0;
-        width: 50px;
+        width: 50px; /* breden og højden på menu toggle */
         height: 50px;
         opacity: 0;
-        z-index: 30;
+        z-index: 30; /* gør knappen ligger øverst */
         cursor: pointer;
     }
 
     .nav ul {
-        display: none;
+        display: none; /* skjuler nav menuen */
         flex-direction: column;
         background: white;
         position: absolute;
@@ -325,20 +328,20 @@ img {
         border: 1px solid black;
         z-index: 30;
     }
-
+    /* Vis nav menuen, når menu-toggle er aktiveret */
     .menu-toggle:checked + .burger + .nav ul {
         display: flex;
     }
 
     .nav ul li {
-        margin: 10px 0;
+        margin: 10px 0; /* mellemtum mellem listepunkt */
     }
 
     .nav a {
-        color: black;
+        color: black; /* tekstfarven sort */
         width: 100%;
         display: block;
-        z-index: 50;
+        z-index: 50; /* sikrer, at links er øverst i menuen */
     }
 
     .item img {
@@ -348,24 +351,24 @@ img {
     }
 }
 
-/* Footer */
+/* Styling af footeren */
 footer {
     color: white;
     text-align: center;
     padding: 20px 0;
     background: #d9d9d9;
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Sørger for, at footeren vises over andre elementer med lavere z-index */
 }
-
+/* Styling af footer didivder */
 .footer-divider {
     width: 90%;
-    height: 2px;
+    height: 2px; /* Sætter højden af divideren til 2px */
     background: white;
     margin: 10px auto;
 }
 
-/* CTA Button */
+/* Styling af bestil knap */
 .bestil-knap {
     background-color: black;
     color: white;
@@ -381,7 +384,7 @@ footer {
 
 .bestil-knap:hover {
     background-color: gray;
-    transform: scale(1.05);
+    transform: scale(1.05); /* Forstørrer knappen med 5% ved hover */
 }
 
 

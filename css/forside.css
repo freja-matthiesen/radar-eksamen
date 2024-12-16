@@ -335,7 +335,7 @@ section.logo{
         }
     
         .nav a {
-            color: black; /* tekstfarven sor */
+            color: black; /* tekstfarven sort */
             width: 100%;
             display: block;
             z-index: 50; /* sikrer, at links er øverst i menuen */

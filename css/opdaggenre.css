@@ -1,51 +1,51 @@
-
+/* Styling af body element */
 body{
-    font-family: "Tilt Warp", sans-serif;
+    font-family: "Tilt Warp", sans-serif; /* skrifttypen til tilt wrap og sans serif som backup */
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
       "XROT" 
       "YROT" ;
   }
-/* styles.css */
+/* Generel styling */
 body {
     margin: 0;
     color: white;
     background-color: #d9d9d9;
 }
-
+/* Styling af headeren */
 .header {
     position: fixed;
     top: 10px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start; /* gør elementerne er til venstre i headeren */
     align-items: center;
     padding: 10px 20px;
-    background: #d9d9d9;
+    background: #d9d9d9; /* genrel baggrundsfarve */
     position: fixed;
     width: 100%;
     height: auto;
-    z-index: 10;
+    z-index: 10; /* Giver headeren en z-index på 10, så den placeres ovenpå andre elementer med lavere z-index */
 }
-
+/* Styling af logo */
 .logo img {
     display: flex;
     width: 100px;
     margin-right: 20px;
 }
 .logo a {
-    pointer-events: auto; /* Tillad klik */
-    text-decoration: none; /* Fjern understregning */
+    pointer-events: auto; /* Tillader klik */
+    text-decoration: none; /* Fjerner understregning */
     display: inline-block; /* Sørg for klikbart område følger billedet */
 }
-
+/* Styling af nav listen ul */
 .nav ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
-
+/* Styling af nav listen li */
 .nav ul li {
     display: flex;
     justify-content:space-evenly ;
@@ -54,7 +54,7 @@ body {
     margin-left: 5rem;
     margin-top: 2rem;
 }
-
+/* Styling af links i navigationen */
 .nav a {
     text-decoration: none;
     color: white;
@@ -67,32 +67,32 @@ body {
 }
 
 section.opdag-genre {
-    transform: translateY(100px);
+    transform: translateY(100px); /* Flytter sektion 100px nedad */
 }
-
+/* Styling af sektion opdag genre */
 .opdag-genre {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
     background-color: #d9d9d9;
-    color: black;
-    line-height: 1.8;
+    color: black; /* skrift farve til sort */
+    line-height: 1.8; 
 }
-
+/* Styling af venstre kolonne */
 .left-column {
-    flex: 2;
+    flex: 2; /* Gør venstre kolonne 2 gange bredere end de andre kolonner i en flex container */
     margin-right: 20px;
     line-height: 1.8;
 }
-
+/* Styling af h1 i venstre kolonne */
 .left-column h1 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
-    line-height: 1.8;
+    line-height: 1.8; /* linjehøjden så den læsbar */
 }
-
+/* Styling af paragraf i venstre kolonne */
 .left-column p {
     margin-bottom: 15px;
     line-height: 1.6;
@@ -100,44 +100,40 @@ section.opdag-genre {
     color: black;
     line-height: 1.8;
 }
-
+/* Styling af links i venstre kolonne */
 .left-column a {
-    color: red;
-    text-decoration: none;
+    color: white; /* Sætter linkfarven til hvid */
+    text-decoration: none; /* Fjerner understrygning på links */
     font-weight: bold;
     line-height: 1.8;
     
 }
-
+/* Styling af højre kolonne */
 .right-column {
     flex: 1;
     text-align: center;
 }
-
+/* Styling af portræt billede */
 .portrait {
     width: 100%;
     max-width: 300px;
     height: auto;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 10px; /* Runde hjørner på billedet */
 }
-
+/* Styling af citatbillede */
 .citat-billede {
-    width: 500px;
-    max-width: 500px;
-    height: 200px;
+    width: 500px; /* Bredden af citatbilledet til 500px */
+    max-width: 500px; /* Begrænsning af billedet til maksimalt 500px */
+    height: 200px; /* Sætter højden til 200px */
 }
-
-
-
-
-  /* Burger Menu Styles */
+  /* Styling af burgermenu */
   .menu-toggle {
     display: none;
 }
 
 .burger {
-    display: none;
+    display: none; /* Skjuler den  */
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
@@ -146,18 +142,17 @@ section.opdag-genre {
     top: 20px;
     z-index: 20;
 }
-
+/* Styling af linjerne i burgermenuen */
 .burger span {
     width: 25px;
     height: 3px;
     background: white;
 }
-
-
-
+/* Styling for links der besøgt */
 a:visited {
-    color: white;  /* Undgå lilla farve */
+    color: white;  /* farven til hvid på besøgte links */
 }
+/* Styling af foooter */
 footer {
     color: white;
     text-align: center;
@@ -168,9 +163,9 @@ footer {
     transform: translateY(200px);
 }
 
-/* Hvid skillelinje */
+/* Hvid skillelinje over footer */
 .footer-divider {
-    width: 110%;    /* Mindre end fuld bredde for pæn margin */
+    width: 110%;    
     height: 2px;
     background: white;
     margin: 0 auto 10px;  /* Centrer og tilføj afstand til indhold */
@@ -182,33 +177,31 @@ footer {
     margin-bottom: -10px;
 }
 
-/* Adresse styling */
+/* Styling af adresse i footeren */
 .footer-address {
-    color: white;
+    color: white; /* tekstfarven til hvid */
     text-decoration: none;
-    font-size: 14px;   /* Mindre tekst */
+    font-size: 14px;   /* tekststørrelsen til 14px */
     display: block;
     margin-bottom: -10px;
     margin: 5px 0;
     transform: translateY(-87px);
 }
 
-/* Socials styling */
+/* Styling af socials */
 .socials a img {
     width: 30px;  /* Mindre ikonstørrelse */
     margin: 0 5px;
     margin-bottom: -50px;
 }
-
+/* Styling af socials */
 .socials {
     margin-top: 10px;
     margin-bottom: -10px;
 }
 
-/* Fjern standard link-styling */
 a {
-    text-decoration: none;
-    
+    text-decoration: none; /* Fjerner understregning af links */
     transform: translateY(-25px);
 }
 
@@ -218,20 +211,21 @@ p{
     font-size: large;
     color: white;
 }
-
+/* Styling af socials */
 section.socials {
     display: flex;
     flex-direction: row-reverse;
     transform: translateY(-90px);
     gap: 10px;
 }
+/* Styling af logo */
 section.logo{
      display: block;
      height: auto;
      width: 50px;
     }
 
-/* Responsiv */
+/* Responsive Styles for ipad */
 @media (max-width: 1024px) {
     /* Mindre navbar til iPads og mindre skærme */
     .header {
@@ -252,7 +246,7 @@ section.logo{
 }
 
 
-/* Mobil-størrelse (max-width: 768px) */
+/* Responsive Styles for iphone */
 @media (max-width: 768px) {
     .header {
         flex-direction: row;
@@ -261,7 +255,7 @@ section.logo{
     }
 
     .burger {
-        display: flex;
+        display: flex; /* gør burgermenuen synlig */
     }
 
     .menu-toggle {
@@ -269,15 +263,15 @@ section.logo{
         position: absolute;
         top: 0;
         right: 0;
-        width: 50px;
+        width: 50px; /* breden og højden på menu toggle */
         height: 50px;
         opacity: 0;
-        z-index: 30;
+        z-index: 30; /* gør knappen ligger øverst */
         cursor: pointer;
     }
 
     .nav ul {
-        display: none;
+        display: none; /* skjuler nav menuen */
         flex-direction: column;
         background: white;
         position: absolute;
@@ -289,20 +283,20 @@ section.logo{
         border: 1px solid black;
         z-index: 30;
     }
-
+      /* Vis nav menuen, når menu-toggle er aktiveret */
     .menu-toggle:checked + .burger + .nav ul {
         display: flex;
     }
 
     .nav ul li {
-        margin: 10px 0;
+        margin: 10px 0; /* mellemtum mellem listepunkt */
     }
 
     .nav a {
-        color: black;
+        color: black; /* tekstfarven sort */
         width: 100%;
         display: block;
-        z-index: 50;
+        z-index: 50; /* sikrer, at links er øverst i menuen */
     }
 
 
@@ -347,7 +341,8 @@ section.logo{
         width: 90%;
         margin: 10px auto;
     }
+
     img {
-        transform: translateY(35px);
+        transform: translateY(35px); /* Flytter billederne 35px ned på deres oprindlige position */
     }
 }
