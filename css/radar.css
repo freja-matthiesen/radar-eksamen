@@ -1,19 +1,19 @@
-
+/* Styling af body element */
 body{
-    font-family: "Tilt Warp", sans-serif;
+    font-family: "Tilt Warp", sans-serif; /* skrifttypen til tilt wrap og sans serif som backup */
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
       "XROT" 
       "YROT" ;
   }
-/* styles.css */
+/* Generel styling */
 body {
     margin: 0;
     color: white;
     background-color: #d9d9d9;
 }
-
+/* Styling af headeren */
 .header {
     position: fixed;
     top: 10px;
@@ -27,6 +27,7 @@ body {
     height: auto;
     z-index: 10;
 }
+/* Styling af logo */
 .logo a {
     pointer-events: auto; /* Tillad klik */
     text-decoration: none; /* Fjern understregning */
@@ -37,14 +38,14 @@ body {
     width: 100px;
     margin-right: 20px;
 }
-
+/* Styling af nav listen ul */
 .nav ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
-
+/* Styling af nav listen li */
 .nav ul li {
     display: flex;
     justify-content:space-evenly ;
@@ -54,6 +55,7 @@ body {
     margin-top: 2rem;
 }
 
+/* Styling af links i navigationen */
 .nav a {
     text-decoration: none;
     color: white;
@@ -65,13 +67,13 @@ body {
     color: gray; /* Skift til grå ved hover */
 }
 
-/* Burger Menu Styles */
+/* Styling af burgermenu */
 .menu-toggle {
     display: none;
 }
 
 .burger {
-    display: none;
+    display: none; /* Skjuler den  */
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
@@ -80,7 +82,7 @@ body {
     top: 20px;
     z-index: 20;
 }
-
+/* Styling af linjerne i burgermenuen */
 .burger span {
     width: 25px;
     height: 3px;
@@ -117,23 +119,24 @@ body {
 }
 
 
-/* Højre Sektion */
+/* venstre Sektion */
 section.left-section {
     transform: translateY(90px);
     padding: 20px;
 }
+/* Højre Sektion */
 .right-section {
     flex: 1; /* Giver højre sektion samme plads som venstre */
     text-align: left; /* Venstrejuster tekst */
 }
-
+/* h2 styling */
 .right-section h2 {
     font-size: 1.5rem;
     color: black;
     margin-bottom: 10px;
     line-height: 1.8;
 }
-
+/* h3 styling */
 .right-section h3 {
     font-size: 1.2rem;
     color: black;
@@ -141,7 +144,7 @@ section.left-section {
     margin-bottom: 10px;
     line-height: 1.8;
 }
-
+/* højre sektion paragraf styling */
 .right-section p {
     font-size: 1rem;
     color: black;
@@ -149,17 +152,18 @@ section.left-section {
     line-height: 1.8;
 }
 
-
+/* doner billede */
 img.doner {
     height: auto;
     width: 35rem;
 }
+
 main.support-container {
-    transform: translateY(90px);
+    transform: translateY(90px); /* flytter det 90px nedad */
 }
 
 
-
+/* Styling af foooter */
 footer {
     color: white;
     text-align: center;
@@ -170,7 +174,7 @@ footer {
     transform: translateY(200px);
 }
 
-/* Hvid skillelinje */
+/* Hvid skillelinje over footer */
 .footer-divider {
     width: 110%;    /* Mindre end fuld bredde for pæn margin */
     height: 2px;
@@ -184,52 +188,53 @@ footer {
     margin-bottom: -10px;
 }
 
-/* Adresse styling */
+/* Styling for links der besøgt */
 a:visited {
-    color: white;  /* Undgå lilla farve */
+    color: white;  /* farven til hvid på besøgte links */
 }
+/* Styling af adresse i footeren */
 .footer-address {
-    color: white;
+    color: white; /* tekstfarven til hvid */
     text-decoration: none;
-    font-size: 14px;   /* Mindre tekst */
+    font-size: 14px;   /* tekststørrelsen til 14px */
     display: block;
     margin-bottom: -10px;
     margin: 5px 0;
     transform: translateY(-87px);
 }
 
-/* Socials styling */
+
 .socials a img {
     width: 30px;  /* Mindre ikonstørrelse */
     margin: 0 5px;
     margin-bottom: -50px;
 }
-
+/* Styling af socials */
 .socials {
-    margin-top: 10px;
+    margin-top: 10px; 
     margin-bottom: -10px;
 }
 
-/* Fjern standard link-styling */
+
 a {
-    text-decoration: none;
-    
+    text-decoration: none; /* Fjerner understregning af links */
     transform: translateY(-25px);
 }
 
-
+/* Styling af paragraf */
 p{
     font-weight: bold;
     font-size: large;
     color: white;
 }
-
+/* Styling af socials */
 section.socials {
     display: flex;
     flex-direction: row-reverse;
     transform: translateY(-50px);
     gap: 10px;
 }
+/* Styling af logo */
 section.logo{
      display: block;
      height: auto;
@@ -240,8 +245,9 @@ section.logo{
         transform: translateY(60px);
     }
 
-/* Responsive Styles */
+/* Responsive Styles for ipad */
 @media (max-width: 1024px) {
+    /* Mindre navbar til iPads og mindre skærme */
     .header {
         padding: 5px 15px;
     }
@@ -253,7 +259,7 @@ section.logo{
     .nav a {
         font-size: 16px;
     }
-
+    /* arrangere elementerne i kollone istedet for horisontalt */
     .support-container {
         flex-direction: column;
         padding: 10px;
@@ -271,7 +277,8 @@ section.logo{
 
 
 
- /* Mobil-størrelse (max-width: 768px) */
+
+/* Responsive Styles for iphone */
 @media (max-width: 768px) {
     .header {
         flex-direction: row;
@@ -280,7 +287,7 @@ section.logo{
     }
 
     .burger {
-        display: flex;
+        display: flex; /* gør burgermenuen synlig */
     }
 
     .menu-toggle {
@@ -288,15 +295,15 @@ section.logo{
         position: absolute;
         top: 0;
         right: 0;
-        width: 50px;
+        width: 50px; /* breden og højden på menu toggle */
         height: 50px;
         opacity: 0;
-        z-index: 30;
+        z-index: 30; /* gør knappen ligger øverst */
         cursor: pointer;
     }
 
     .nav ul {
-        display: none;
+        display: none; /* skjuler nav menuen */
         flex-direction: column;
         background: white;
         position: absolute;
@@ -308,20 +315,20 @@ section.logo{
         border: 1px solid black;
         z-index: 30;
     }
-
+    /* Vis nav menuen, når menu-toggle er aktiveret */
     .menu-toggle:checked + .burger + .nav ul {
         display: flex;
     }
 
     .nav ul li {
-        margin: 10px 0;
+        margin: 10px 0; /* mellemtum mellem listepunkt */
     }
 
     .nav a {
-        color: black;
+        color: black; /* tekstfarven sort */
         width: 100%;
         display: block;
-        z-index: 50;
+        z-index: 50; /* sikrer, at links er øverst i menuen */
     }
     .footer {
         text-align: center;
@@ -336,7 +343,7 @@ section.logo{
     }
 
     .nav a {
-        font-size: 12px;
+        font-size: 12px; /* mindre skrift størrelse */
     }
 
     .logo img {
